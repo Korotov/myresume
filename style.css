@@ -14,3 +14,29 @@ main {
 section {
     padding: 1rem;
 }
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.skill-item {
+    max-width: 150px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: .5rem;
+ /* настраиваем плавность */
+    transition: box-shadow .5s,
+                transform .5s;
+
+}
+.skill-item:hover {
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.15),
+        inset 0 0 10px rgba(140, 223, 248, 0.443);
+    /* поднять на 5px */
+        transform: translateY(-5px);
+}
